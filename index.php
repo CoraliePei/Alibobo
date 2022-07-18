@@ -1,6 +1,7 @@
 <?php
 
 require_once './functions/autoLoad.php';
+require __DIR__ . 'vendor/autoload.php';
 autoLoad("*.php");
 
 // Définir le fuseau horaire dans lequel le serveur se trouve
