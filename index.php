@@ -1,9 +1,15 @@
 <?php
 
+session_start();
+
+
+
 require_once './functions/autoLoad.php';
 require __DIR__ . '/vendor/autoload.php';
 autoLoad("*.php");
 
+$_SESSION['message'] = 'Blabla';
+dump($_SESSION);
 // Définir le fuseau horaire dans lequel le serveur se trouve
 date_default_timezone_set('Europe/Paris');
 $pdo = pdo();
