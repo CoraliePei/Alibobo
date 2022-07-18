@@ -25,7 +25,7 @@ if (isset($_POST['frmInscription'])) {
         array_push($erreurs, "Veuillez saisir une adresse mail conforme");
 
     if (mb_strlen($mdp1) === 0 || mb_strlen($mdp2) === 0)
-        array_push($erreurs, "Veuillez saisis deux fois votre mot de passe");
+        array_push($erreurs, "Veuillez saisir deux fois votre mot de passe");
 
     elseif ($mdp1 !== $mdp2)
         array_push($erreurs, "Vos mots de passe ne sont pas identiques");
